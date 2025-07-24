@@ -3,18 +3,24 @@ import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/home/HomePage'
 import AboutPage from './pages/about/AboutPage'
 import NotFoundPage from './pages/not-found/NotFoundPage'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom' 
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   return (
+    
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
+    // <div className="min-h-screen bg-blue-100 flex items-center justify-center">
+    //   <h1 className="text-3xl font-bold text-blue-800">
+    //     Tailwind funcionando! 🚀
+    //   </h1>
+    // </div>
   );
   
   // const [count, setCount] = useState(0)
