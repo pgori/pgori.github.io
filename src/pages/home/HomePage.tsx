@@ -6,9 +6,8 @@ function HomePage() {
     return <>
         <VoronoiBackground />
         <main className="relative z-10">
-        <h1 className="text-white text-4xl p-8">Pietro Gori</h1>
-        {/* Resto da página */}
-      </main>
+            <h1 className="text-white text-4xl p-8">Pietro Gori</h1>
+        </main>
     </>
 }
 
