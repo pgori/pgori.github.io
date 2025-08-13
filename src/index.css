@@ -1,7 +1,10 @@
-/* @import "tailwindcss/preflight"; */
-@tailwind utilities;
-
+@import "tailwindcss";
+@import "@fontsource/vt323";
 /* @import "@fontsource/share-tech/400.css"; */
+
+@theme {
+  --font-primary: 'vt323', sans-serif;
+} 
 
 :root {
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
@@ -28,7 +31,7 @@ a:hover {
 }
 
 body {
-  /* margin: 0; */
+  margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
