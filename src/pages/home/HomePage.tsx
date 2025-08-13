@@ -1,5 +1,5 @@
 // import { motion } from "motion/react"
-import VoronoiBackground from "../../components/VoronoiBackground"
+import VoronoiBackground from "@/components/VoronoiBackground"
 
 function HomePage() {
     // return <h1 className="text-3xl font-bold text-blue-800">Hello there, you are at the home page.</h1>
