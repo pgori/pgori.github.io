@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "@fontsource/vt323";
-/* @import "@fontsource/share-tech/400.css"; */
 
 @theme {
   --font-primary: 'vt323', sans-serif;
