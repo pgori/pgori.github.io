@@ -4,15 +4,15 @@ import VoronoiBackground from '@/components/VoronoiBackground.tsx';
 function AboutPage() {
     return <>
         <VoronoiBackground />
-        <div className="grid grid-cols-3 gap-4 font-primary w-full border-2 border-x-0">
-            <div className='border-r-2'>
-                <img src={myPicture} alt='Pietro picture'/>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-primary w-full border-2 border-x-0 h-[750px] overflow-hidden">
+            <div className='min-w-0 min-h-0'> {/* min-w-0 min-h-0  allow items to shrink/contract/retract */}
+                <img src={myPicture} alt='Pietro picture' className="w-full h-full object-contain"/>
             </div>
-            <div className='col-span-2'>
-                <div className="font-bold text-8xl text-center">Pietro Gori</div>
-                <div className="text-6xl text-center">Full Stack Developer</div>
-                <div className="text-4xl my-4 text-center">pietro_gori@hotmail.com</div>
-                <div className='text-4xl'>
+            <div className='col-span-1 md:col-span-2'>
+                <div className="font-bold text-4xl md:text-8xl text-center">Pietro Gori</div>
+                <div className="text-2xl md:text-6xl text-center">Full Stack Developer</div>
+                <div className="text-xl md:text-4xl my-4 text-center">pietro_gori@hotmail.com</div>
+                <div className="text-lg md:text-4xl space-y-4">
                     <div>I’m a Brazilian full stack developer with over 9 years of professional experience, both in Brazil and abroad, specializing in web development. I mainly work with JavaScript frameworks such as Angular, Vue, and React, and I also build REST APIs using Laravel and Django.</div>
                     <div>I created this website to enhance my professional visibility and as a personal lab, where I share content about programming and run experiments to improve my skills.</div>
                     <div>Outside of work, I practice Brazilian jiu-jitsu and have a passion for martial arts and combat sports. I’d be happy to help bring your project vision to life.</div>
