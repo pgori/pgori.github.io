@@ -1,14 +1,14 @@
-import myPicture from '@/assets/images/pietro-picture4.png';
+import myPicture from '@/assets/images/pietro-picture3.png';
 import VoronoiBackground from '@/components/VoronoiBackground.tsx';
 
 function AboutPage() {
     return <>
         <VoronoiBackground />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-primary w-full border-2 border-x-0 h-[750px] overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-primary w-full border-2 border-x-0 h-[750px] overflow-hidden">
             <div className='min-w-0 min-h-0'> {/* min-w-0 min-h-0  allow items to shrink/contract/retract */}
                 <img src={myPicture} alt='Pietro picture' className="w-full h-full object-contain"/>
             </div>
-            <div className='col-span-1 md:col-span-2'>
+            <div className='col-span-1 md:col-span-1 px-4'>
                 <div className="font-bold text-4xl md:text-8xl text-center">Pietro Gori</div>
                 <div className="text-2xl md:text-6xl text-center">Full Stack Developer</div>
                 <div className="text-xl md:text-4xl my-4 text-center">pietro_gori@hotmail.com</div>
