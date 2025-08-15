@@ -22,3 +22,17 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vite/deps/_metadata.json
+.vite/deps/chunk-5WQJO2FO.js
+.vite/deps/chunk-5WQJO2FO.js.map
+.vite/deps/chunk-QOVZGY7A.js
+.vite/deps/chunk-QOVZGY7A.js.map
+.vite/deps/package.json
+.vite/deps/react_jsx-dev-runtime.js
+.vite/deps/react_jsx-dev-runtime.js.map
+.vite/deps/react-dom_client.js
+.vite/deps/react-dom_client.js.map
+.vite/deps/react-router-dom.js
+.vite/deps/react-router-dom.js.map
+.vite/deps/react.js
+.vite/deps/react.js.map
