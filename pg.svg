@@ -1,0 +1,105 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="256" height="256" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ícone PG cibernético">
+  <defs>
+    <style>
+      :root{
+        --frame1:#0cf;
+        --frame2:#ff2df0;
+        --textFill:#e6f7ff;
+        --textStroke:#66e3ff;
+        --scan:#0bffff0d;
+        --glow: #22e7ff;
+      }
+      .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    </style>
+
+    <linearGradient id="grad-frame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--frame1)"></stop>
+      <stop offset="100%" stop-color="var(--frame2)"></stop>
+    </linearGradient>
+
+    <linearGradient id="grad-stroke" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="var(--frame2)"></stop>
+      <stop offset="100%" stop-color="var(--frame1)"></stop>
+    </linearGradient>
+
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"></feGaussianBlur>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.13
+                0 0 0 0 0.90
+                0 0 0 0 1.00
+                0 0 0 0.9 0" result="glow"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="glow"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <filter id="neon-stroke" x="-50%" y="-50%" width="200%" height="200%">
+      <feMorphology operator="dilate" radius="1" in="SourceAlpha" result="exp"></feMorphology>
+      <feGaussianBlur in="exp" stdDeviation="3" result="blur1"></feGaussianBlur>
+      <feGaussianBlur in="exp" stdDeviation="8" result="blur2"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur2"></feMergeNode>
+        <feMergeNode in="blur1"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <pattern id="scanlines" width="4" height="8" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" y="0" fill="var(--scan)"></rect>
+    </pattern>
+
+    <mask id="circuit-mask">
+      <rect x="56" y="56" width="400" height="400" rx="28" fill="white"></rect>
+    </mask>
+  </defs>
+
+  <!-- Moldura -->
+  <g filter="url(#soft-glow)">
+    <path d="
+      M256,36
+      L415,128
+      a24,24 0 0 1 12,21
+      v214
+      a24,24 0 0 1 -12,21
+      L256,496
+      L97,404
+      a24,24 0 0 1 -12,-21
+      V169
+      a24,24 0 0 1 12,-21
+      Z" fill="none" stroke="url(#grad-frame)" stroke-width="6"></path>
+  </g>
+
+  <path d="M104 384 h52 v16 h-28 v16 h-24 z" fill="url(#grad-frame)" opacity="0.7"></path>
+
+  <!-- Scanlines -->
+  <rect x="64" y="64" width="384" height="384" rx="24" fill="url(#scanlines)" opacity="0.35"></rect>
+
+  <!-- Circuitos -->
+  <g mask="url(#circuit-mask)" opacity="0.6">
+    <path d="M120 180 H240 Q260 180 260 200 V312 Q260 332 280 332 H392" fill="none" stroke="url(#grad-frame)" stroke-width="3" stroke-dasharray="6 8"></path>
+    <circle cx="240" cy="200" r="3" fill="url(#grad-frame)"></circle>
+    <circle cx="260" cy="312" r="3" fill="url(#grad-frame)"></circle>
+    <circle cx="392" cy="332" r="3" fill="url(#grad-frame)"></circle>
+    <path d="M392 332 v28" stroke="url(#grad-frame)" stroke-width="3"></path>
+  </g>
+
+  <!-- Texto -->
+  <g transform="translate(256,262) skewX(-6)">
+    <text class="mono" x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="220" fill="none" stroke="url(#grad-stroke)" stroke-width="10" letter-spacing="4">
+      PG
+    </text>
+    <text class="mono" x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="220" fill="none" stroke="var(--glow)" stroke-width="3" filter="url(#neon-stroke)" letter-spacing="4">
+      PG
+    </text>
+    <text class="mono" x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="220" fill="var(--textFill)" stroke="var(--textStroke)" stroke-width="1" letter-spacing="4">
+      PG
+    </text>
+  </g>
+
+  <!-- Glitch bars -->
+  <rect x="72" y="146" width="160" height="4" fill="url(#grad-frame)" opacity="0.5"></rect>
+  <rect x="280" y="158" width="96" height="3" fill="url(#grad-frame)" opacity="0.45"></rect>
+  <rect x="184" y="366" width="232" height="4" fill="url(#grad-frame)" opacity="0.35"></rect>
+</svg>
