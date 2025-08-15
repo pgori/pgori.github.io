@@ -2,7 +2,7 @@
 @import "@fontsource/vt323";
 
 @theme {
-  --font-primary: 'vt323', sans-serif;
+  --font-primary: 'VT323', sans-serif;
 } 
 
 :root {
