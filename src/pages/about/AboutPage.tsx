@@ -5,8 +5,10 @@ function AboutPage() {
     return <>
         <VoronoiBackground />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-primary w-full border-2 border-x-0 h-[750px] overflow-hidden">
-            <div className='min-w-0 min-h-0'> {/* min-w-0 min-h-0  allow items to shrink/contract/retract */}
-                <img src={myPicture} alt='Pietro picture' className="w-full h-full object-contain"/>
+            <div className='min-w-0 min-h-0'> 
+                <div className='aspect-square max-w-full max-h-full m-auto'>
+                    <img src={myPicture} alt='Pietro picture' className="w-full h-full rounded-full object-contain "/>
+                </div>
             </div>
             <div className='col-span-1 md:col-span-1 px-4'>
                 <div className="font-bold text-4xl md:text-8xl text-center">Pietro Gori</div>
