@@ -11,7 +11,11 @@ interface Point {
   dy: number
 }
 
-export default function VoronoiBackground() {
+type VoronoiBackgroundProps = {
+  isDarkTheme: boolean;
+};
+
+export default function VoronoiBackground({isDarkTheme}: VoronoiBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const mouseRef = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
   const pointsRef = useRef<Point[]>(
@@ -64,9 +68,14 @@ export default function VoronoiBackground() {
 
       // Draw
       ctx.fillStyle = "#0f0f1a"
-      ctx.fillRect(0, 0, width, height)
-
       ctx.strokeStyle = "#00ffcc" // color "tech"
+
+      if(!isDarkTheme) {
+        ctx.fillStyle = "#ffffff"  
+        ctx.strokeStyle = "#000000" 
+      }
+      
+      ctx.fillRect(0, 0, width, height)
       ctx.lineWidth = 0.6
 
       for (let i = 0; i < points.length; i++) {
