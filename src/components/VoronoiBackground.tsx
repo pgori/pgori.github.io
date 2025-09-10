@@ -108,7 +108,7 @@ export default function VoronoiBackground({isDarkTheme}: VoronoiBackgroundProps)
       window.removeEventListener("resize", resize)
       window.removeEventListener("mousemove", handleMouseMove)
     }
-  }, [])
+  }, [isDarkTheme])
 
   return (
     <canvas

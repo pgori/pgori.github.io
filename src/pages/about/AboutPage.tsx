@@ -1,16 +1,23 @@
 import myPicture from '@/assets/images/pietro-picture3.png';
 import VoronoiBackground from '@/components/VoronoiBackground.tsx';
 import ThemeButton from '@/components/buttons/ThemeButton';
+import { useState } from 'react';
 
 // eslint-disable-next-line prefer-const
-let isDarkTheme = true;
+// let isDarkTheme = true;
 
 function AboutPage() {
+    const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+    const setTheme = (value: boolean) => {
+        setIsDarkTheme(value);
+    }
+
     return <>
         <VoronoiBackground isDarkTheme={isDarkTheme}/>
     
         <div className='absolute right-0 my-4 mx-4'>
-            <ThemeButton />
+            <ThemeButton setTheme={setTheme}/>
         </div>
         <div className='h-screen content-center'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-primary w-full border-2 border-x-0 h-full md:h-[700px] overflow-hidden">
