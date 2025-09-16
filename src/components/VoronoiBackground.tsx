@@ -67,12 +67,12 @@ export default function VoronoiBackground({isDarkTheme}: VoronoiBackgroundProps)
       const voronoi = delaunay.voronoi([0, 0, width, height])
 
       // Draw
-      ctx.fillStyle = "#0f0f1a"
-      ctx.strokeStyle = "#00ffcc" // color "tech"
+      ctx.fillStyle = "#ffffff"  
+      ctx.strokeStyle = "#000000"
 
-      if(!isDarkTheme) {
-        ctx.fillStyle = "#ffffff"  
-        ctx.strokeStyle = "#000000" 
+      if(isDarkTheme) {
+        ctx.fillStyle = "#0f0f1a"
+        ctx.strokeStyle = "#00ffcc" // color "tech"
       }
       
       ctx.fillRect(0, 0, width, height)

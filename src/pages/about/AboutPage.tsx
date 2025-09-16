@@ -3,11 +3,8 @@ import VoronoiBackground from '@/components/VoronoiBackground.tsx';
 import ThemeButton from '@/components/buttons/ThemeButton';
 import { useState } from 'react';
 
-// eslint-disable-next-line prefer-const
-// let isDarkTheme = true;
-
 function AboutPage() {
-    const [isDarkTheme, setIsDarkTheme] = useState(true);
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
 
     const setTheme = (value: boolean) => {
         setIsDarkTheme(value);
@@ -27,7 +24,7 @@ function AboutPage() {
                     </div>
                 </div>
                 <div className='col-span-1 md:col-span-1 px-4 content-center overflow-auto'>
-                    <div className="font-bold text-4xl md:text-7xl text-center">Pietro Gori</div>
+                    <div className="font-bold text-4xl md:text-7xl text-center dark:text-white">Pietro Gori</div>
                     <div className="text-2xl md:text-5xl text-center">Full Stack Developer</div>
                     <div className="text-xl md:text-4xl my-3 text-center">pietro_gori@hotmail.com</div>
                     <div className="text-lg md:text-3xl space-y-3 ">
