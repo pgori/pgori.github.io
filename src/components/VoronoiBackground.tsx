@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react"
 import { Delaunay } from "d3-delaunay"
+import { useGlobal } from "@/contexts/useGlobal";
 
 const NUM_POINTS = 100
 const POINT_SPEED = 0.3
@@ -11,11 +12,9 @@ interface Point {
   dy: number
 }
 
-type VoronoiBackgroundProps = {
-  isDarkTheme: boolean;
-};
 
-export default function VoronoiBackground({isDarkTheme}: VoronoiBackgroundProps) {
+export default function VoronoiBackground() {
+  const { isDarkTheme } = useGlobal();
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const mouseRef = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
   const pointsRef = useRef<Point[]>(
@@ -72,7 +71,7 @@ export default function VoronoiBackground({isDarkTheme}: VoronoiBackgroundProps)
 
       if(isDarkTheme) {
         ctx.fillStyle = "#0f0f1a"
-        ctx.strokeStyle = "#00ffcc" // color "tech"
+        ctx.strokeStyle = "#00ffcc" // color "tech" or "matrix"
       }
       
       ctx.fillRect(0, 0, width, height)
