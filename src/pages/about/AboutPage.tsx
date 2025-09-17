@@ -25,9 +25,9 @@ function AboutPage() {
                     <div className="text-2xl md:text-5xl text-center">Full Stack Developer</div>
                     <div className="text-xl md:text-4xl my-3 text-center">pietro_gori@hotmail.com</div>
                     <div className="text-lg md:text-3xl space-y-3 ">
-                        <div>I’m a Brazilian full stack developer with over 9 years of professional experience, both in Brazil and abroad, specializing in web development. I mainly work with JavaScript frameworks such as Angular, Vue, and React, and I also build REST APIs using Laravel and Django.</div>
-                        <div>I created this website to enhance my professional visibility and as a personal lab, where I share content about programming and run experiments to improve my skills.</div>
-                        <div>Outside of work, I practice Brazilian jiu-jitsu and have a passion for martial arts and combat sports. I’d be happy to help bring your project vision to life.</div>
+                        <div>I'm a Brazilian full-stack developer with over 9 years of hands-on experience in web development, spanning projects in Brazil and internationally. Beyond tech, I serve as a Judicial Assistant and occasionally consult as a digital forensics expert.</div>
+                        <div>My toolkit includes JavaScript frameworks like Angular, Vue, and React, plus building robust REST APIs with Laravel and Django. This site is my professional showcase and personal playground—I share programming insights here and experiment to sharpen my edge.</div>
+                        <div>When I'm not coding, you'll find me on the mats practicing Brazilian jiu-jitsu, fueled by a lifelong passion for martial arts and combat sports. I’d be happy to help bring your project vision to life.</div>
                     </div>
                     <div className='text-xl md:text-4xl my-4'>
                         <a href='https://drive.google.com/file/d/1hvT7T2ZuFlmMfWtHSsab8qBYm955Nokb/view?usp=drive_link' target='_blank'>
