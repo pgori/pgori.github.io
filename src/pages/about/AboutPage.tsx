@@ -1,18 +1,10 @@
 import myPicture from '@/assets/images/pietro-picture3.png';
-import VoronoiBackground from '@/components/VoronoiBackground.tsx';
-import ThemeButton from '@/components/buttons/ThemeButton';
-// import { useState } from 'react';
 import { useGlobal } from '@/contexts/useGlobal';
 
 function AboutPage() {
     const { isDarkTheme } = useGlobal();
 
     return <>
-        <VoronoiBackground />
-    
-        <div className='absolute right-0 my-4 mx-4'>
-            <ThemeButton />
-        </div>
         <div className={'h-screen content-center ' + (isDarkTheme ? 'text-matrix': '')}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-primary w-full border-2 border-x-0 h-full md:h-[700px] overflow-hidden">
                 <div className='min-w-0 min-h-0 '> 
