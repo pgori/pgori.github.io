@@ -1,0 +1,16 @@
+import { Outlet } from "react-router-dom";
+import ThemeButton from "@/components/buttons/ThemeButton";
+import VoronoiBackground from "@/components/VoronoiBackground";
+
+export default function Layout() {
+    return <>
+        <VoronoiBackground />
+        <div className='absolute top-0 right-0 my-4 mx-4'>
+            <ThemeButton />
+        </div>
+
+        <div className="font-primary">
+            <Outlet />
+        </div>
+    </>
+}

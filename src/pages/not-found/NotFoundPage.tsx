@@ -1,5 +1,9 @@
+import { useGlobal } from "@/contexts/useGlobal";
+
 function NotFoundPage() {
-    return <h1>Page Not Found</h1>
+    const { isDarkTheme } = useGlobal();
+
+    return <h1 className={isDarkTheme ? 'text-matrix' : ''}>Page Not Found</h1>
 }
 
 export default NotFoundPage;
