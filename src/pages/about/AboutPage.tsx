@@ -18,7 +18,7 @@ function AboutPage() {
                     <div className="text-xl md:text-4xl my-3 text-center">pietro_gori@hotmail.com</div>
                     <div className="text-lg md:text-3xl space-y-3 ">
                         <div>I'm a Brazilian full-stack developer with over 9 years of hands-on experience in web development, spanning projects in Brazil and internationally. Beyond tech, I serve as a Judicial Assistant and occasionally consult as a digital forensics expert.</div>
-                        <div>My toolkit includes JavaScript frameworks like Angular, Vue, and React, plus building robust REST APIs with Laravel and Django. This site is my professional showcase and personal playground—I share programming insights here and experiment to sharpen my edge.</div>
+                        <div>My toolkit includes JavaScript frameworks like Angular, Vue, and React, plus building robust REST APIs with Laravel and Django. This site is my professional showcase and personal playground, where I share programming insights here and experiment to sharpen my edge.</div>
                         <div>When I'm not coding, you'll find me on the mats practicing Brazilian jiu-jitsu, fueled by a lifelong passion for martial arts and combat sports. I’d be happy to help bring your project vision to life.</div>
                     </div>
                     <div className='text-xl md:text-4xl my-4'>
