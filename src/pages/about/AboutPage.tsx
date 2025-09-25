@@ -1,4 +1,4 @@
-import myPicture from '@/assets/images/pietro-picture3.png';
+import myPicture from '@/assets/images/pietro-picture.png';
 import { useGlobal } from '@/contexts/useGlobal';
 
 function AboutPage() {
