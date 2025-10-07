@@ -6,7 +6,6 @@ import PostsArquive from "@/components/PostsArquive";
 
 type data = {
     title: string;
-    content: string;
     slug: string;
     cover_image: string;
 };
@@ -41,21 +40,6 @@ export default function BlogPage() {
     return <>
         <div className={isDarkTheme ? 'text-matrix' : ''}>
             <PostsArquive menuItems={data}/>
-            {/* <ul className="space-y-2">
-                {data?.map((item, index) => (
-                    <li key={index}>
-                        <a 
-                            href={`${API_URLS.posts + item.slug} `}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                          {item.title}  
-                        </a>
-                    </li>
-                ))}
-            </ul> */}
-            {/* <Markdown>{data?.content}</Markdown> */}
-            {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
         </div>
     </>
 }
