@@ -39,9 +39,10 @@ function PostPage() {
 
     return <>
         <div className={"w-screen flex justify-center " + (isDarkTheme ? 'text-matrix' : '')}>
-            {/* <div dangerouslySetInnerHTML={{__html: post?.content}} /> */}
-            <div>
-                <Markdown>{post?.content}</Markdown>
+            <div className="bg-white border-2 my-10 p-10">
+                <div className="prose lg:prose-xl">
+                    <Markdown>{post?.content}</Markdown>
+                </div>
             </div>
         </div>
     </>
