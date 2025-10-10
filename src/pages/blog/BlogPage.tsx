@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { useGlobal } from "@/contexts/useGlobal";
 import { API_URLS } from "@/config/api";
 import PostsArquive from "@/components/PostsArquive";
-// import Markdown from "react-markdown";
 
-type data = {
+type Data = {
     title: string;
     slug: string;
+    excerpt: string;
     cover_image: string;
 };
 
 export default function BlogPage() {
-    const [data, setData] = useState<Array<data>>([]);
+    const [data, setData] = useState<Array<Data>>([]);
     const [loading, setLoading] = useState(true);
     const { isDarkTheme } = useGlobal();
 

@@ -8,6 +8,7 @@ type Post = {
     id: number | null;
     title: string;
     content: string;
+    excerpt: string;
     slug: string;
     cover_image: string | null;
     created_at: string;
@@ -17,7 +18,18 @@ type Post = {
 function PostPage() {
     const { slug } = useParams();
     const { isDarkTheme } = useGlobal();
-    const [post, setPost] = useState<Post>({id: null, title: "", content: "", slug: "", cover_image: "", created_at: "", updated_at: ""});
+    const [post, setPost] = useState<Post>(
+        {
+            id: null, 
+            title: "", 
+            content: "", 
+            excerpt: "", 
+            slug: "", 
+            cover_image: "", 
+            created_at: "", 
+            updated_at: ""
+        }
+    );
     const [loading, setLoading] = useState<boolean>(false);
 
     useEffect(() => {

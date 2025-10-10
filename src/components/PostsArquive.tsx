@@ -1,13 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import noImage from "@/assets/images/no_image.png"
 
-type data = {
+type Data = {
     title: string;
     slug: string;
+    excerpt: string;
     cover_image: string
 };
 
-export default function PostsArquive({menuItems}: {menuItems: Array<data>}) {
+export default function PostsArquive({menuItems}: {menuItems: Array<Data>}) {
     const navigate = useNavigate();
 
     return <>
