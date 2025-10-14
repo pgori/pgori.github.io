@@ -25,8 +25,9 @@ export default function PostsArquive({menuItems}: {menuItems: Array<Data>}) {
                                 className="w-full h-full object-cover" 
                             />
                         </div>
-                        <div className="md:w-1/2 w-full flex flex-col justify-between px-4 py-1">
+                        <div className="md:w-1/2 w-full flex flex-col justify-between px-4 pt-1">
                             <div className="text-3xl">{item.title}</div>
+                            <div className="text-2xl line-clamp-6">{item.excerpt}</div>
                         </div>
                     </div>
                 </a>
