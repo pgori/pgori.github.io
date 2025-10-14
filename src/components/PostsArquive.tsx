@@ -14,7 +14,7 @@ export default function PostsArquive({menuItems}: {menuItems: Array<Data>}) {
     return <>
         <div className="w-screen ">
             {menuItems?.map((item, index) => (
-                <a href="#" key={index}>
+                <a key={index}>
                     <div key={index} className="flex flex-col md:flex-row w-full max-h-[230px] max-w-3xl mx-auto shadow-md overflow-hidden mb-5 group-hover:stroke-white"
                         onClick={() => navigate(`/blog/post/${item.slug}`)}
                     >
