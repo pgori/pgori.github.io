@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import noImage from "@/assets/images/no_image.png"
 
 type Data = {
@@ -9,14 +9,13 @@ type Data = {
 };
 
 export default function PostsArquive({menuItems}: {menuItems: Array<Data>}) {
-    const navigate = useNavigate();
 
     return <>
         <div className="w-screen ">
             {menuItems?.map((item, index) => (
-                <a key={index}>
-                    <div key={index} className="flex flex-col md:flex-row w-full max-h-[230px] max-w-3xl mx-auto shadow-md overflow-hidden mb-5 group-hover:stroke-white"
-                        onClick={() => navigate(`/blog/post/${item.slug}`)}
+                <Link to={"/blog/post/" + item.slug} key={index}>
+                    <div key={index} className="flex flex-col md:flex-row w-full max-h-[230px] max-w-3xl mx-auto shadow-md overflow-hidden mb-5 group-hover:stroke-white border-2"
+                        
                     >
                         <div className="md:w-1/2 w-full">
                             <img 
@@ -30,7 +29,7 @@ export default function PostsArquive({menuItems}: {menuItems: Array<Data>}) {
                             <div className="text-2xl line-clamp-6">{item.excerpt}</div>
                         </div>
                     </div>
-                </a>
+                </Link>
             ))}
         </div>
     </>

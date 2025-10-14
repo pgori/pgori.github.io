@@ -40,7 +40,6 @@ function PostPage() {
             const res = await fetch(API_URLS.posts + slug);
             const data = await res.json();
             setPost(data);
-            console.log(post);
             setLoading(false);
         }
 
