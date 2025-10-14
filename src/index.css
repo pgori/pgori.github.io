@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
 @import "@fontsource/vt323";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --font-primary: 'VT323', monospace;
