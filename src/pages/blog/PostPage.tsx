@@ -47,15 +47,17 @@ function PostPage() {
         fetchPost();
     }, [post, slug]);
 
-    if (loading) return <p className={ isDarkTheme ? 'text-matrix' : ''}>Loading...</p>
-
     return <>
         <div className={"w-screen flex justify-center " + (isDarkTheme ? 'text-matrix' : '')}>
-            <div className="bg-white border-2 my-10 p-10">
-                <div className="prose lg:prose-xl">
-                    <Markdown>{post?.content}</Markdown>
+            {loading ? (
+                    <div className="text-3xl">Loading...</div>
+                ) : (
+                <div className="bg-white border-2 my-10 p-10">
+                    <div className="prose lg:prose-xl">
+                        <Markdown>{post?.content}</Markdown>
+                    </div>
                 </div>
-            </div>
+        )}
         </div>
     </>
 }

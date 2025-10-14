@@ -7,7 +7,10 @@ export default function TopNavBar() {
             { !match ? (
                 <a href="/blog" className="p-1">Blog</a>
             ) : (
-                <a href="/" className="p-1">Home</a>
+                <>
+                    <a href="/" className="p-1">Home</a>
+                    <a href="/blog" className="p-1">Blog</a>
+                </>
             )}
         </div>
     );

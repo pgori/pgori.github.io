@@ -35,7 +35,7 @@ export default function BlogPage() {
             })
     }, []);
 
-    if (loading) return <p className={ isDarkTheme ? 'text-matrix' : ''}>Loading...</p>
+    if (loading) return <div className={"w-screen flex justify-center text-4xl " + (isDarkTheme ? 'text-matrix' : '')}>Loading...</div>
 
     return <>
         <div className={isDarkTheme ? 'text-matrix' : ''}>
