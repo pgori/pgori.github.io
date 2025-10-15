@@ -12,7 +12,7 @@ function AboutPage() {
                         <img src={myPicture} alt='Pietro picture' className="w-full h-full rounded-full object-contain py-2"/>
                     </div>
                 </div>
-                <div className='col-span-1 md:col-span-1 px-4 content-center overflow-auto'>
+                <div className='col-span-1 md:col-span-1 px-4 content-center md:overflow-auto'>
                     <div className="font-bold text-4xl md:text-7xl text-center">Pietro Gori</div>
                     <div className="text-2xl md:text-5xl text-center">Full Stack Developer</div>
                     <div className="text-xl md:text-4xl my-3 text-center">pietro_gori@hotmail.com</div>
