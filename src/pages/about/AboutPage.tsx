@@ -5,14 +5,14 @@ function AboutPage() {
     const { isDarkTheme } = useGlobal();
 
     return <>
-        <div className={'h-screen content-center ' + (isDarkTheme ? 'text-matrix': '')}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full border-2 border-x-0 h-full md:h-[700px] overflow-hidden">
+        <div className={'h-screen content-center mt-[80px] md:mt-0 ' + (isDarkTheme ? 'text-matrix': '')}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full border-2 border-x-0  md:h-[700px] ">
                 <div className='min-w-0 min-h-0 '> 
                     <div className='aspect-square max-w-full max-h-full m-auto'>
                         <img src={myPicture} alt='Pietro picture' className="w-full h-full rounded-full object-contain py-2"/>
                     </div>
                 </div>
-                <div className='col-span-1 md:col-span-1 px-4 content-center md:overflow-auto'>
+                <div className='col-span-1 md:col-span-1 px-4 content-center '>
                     <div className="font-bold text-4xl md:text-7xl text-center">Pietro Gori</div>
                     <div className="text-2xl md:text-5xl text-center">Full Stack Developer</div>
                     <div className="text-xl md:text-4xl my-3 text-center">pietro_gori@hotmail.com</div>

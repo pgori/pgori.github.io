@@ -51,8 +51,8 @@ function PostPage() {
             {loading ? (
                     <div className="text-3xl">Loading...</div>
                 ) : (
-                <div className="bg-white border-2 my-[85px] md:mt-0 p-10">
-                    <div className="prose lg:prose-xl">
+                <div className="bg-white border-2 w-screen md:w-auto my-[85px] md:mt-0 md:p-8">
+                    <div className="prose lg:prose-xl px-2 md:px-0">
                         <Markdown>{post?.content}</Markdown>
                     </div>
                 </div>
