@@ -1,4 +1,4 @@
-import myPicture from '@/assets/images/pietro-picture.png';
+import myPicture from '@/assets/images/pietro-picture.jpg';
 import { useGlobal } from '@/contexts/useGlobal';
 
 function AboutPage() {
@@ -22,7 +22,7 @@ function AboutPage() {
                         <div>When I'm not coding, you'll find me on the mats practicing Brazilian jiu-jitsu, fueled by a lifelong passion for martial arts and combat sports. I’d be happy to help bring your project vision to life.</div>
                     </div>
                     <div className='text-xl md:text-4xl my-4'>
-                        <a href='https://drive.google.com/file/d/1hH6eNZaRp8HKuTcCV0r033KaUi_E0fZb/view?usp=drive_link' target='_blank'>
+                        <a href='https://drive.google.com/file/d/1E5A_kcNHEbg_NxhiGCG_SjFoOOPCqOx_/view?usp=drive_link' target='_blank'>
                             <strong>Download Resume/CV</strong>
                         </a>
                     </div>
